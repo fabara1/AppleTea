@@ -1,0 +1,9 @@
+{
+  "name": "start",
+  "version": "0.0.1",
+  "dependencies": {
+    "jquery": "^3.1.0",
+    "normalize-css": "normalize.css#^4.2.0",
+    "bootstrap": "^3.3.7"
+  }
+}

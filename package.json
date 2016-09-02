@@ -1,0 +1,11 @@
+{
+  "name": "start",
+  "version": "0.0.1",
+  "devDependencies": {
+    "browser-sync": "^2.14.0",
+    "gulp": "^3.9.1",
+    "gulp-compass": "^2.1.0",
+    "gulp-jade": "^1.1.0",
+    "gulp-plumber": "^1.1.0"
+  }
+}

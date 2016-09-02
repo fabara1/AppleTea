@@ -1,0 +1,144 @@
+@import "compass";
+
+
+html,body{
+	height: 100%;
+}
+body{
+	font: 400 15px ProximaNova, sans-serif;
+	line-height: 1.5;
+	color: #6b6b6b;
+}
+
+
+//VARIABLES
+$dop-color: #ffc20e;
+$main-color: #323232;
+//FONTS
+@font-face {
+		font-family: "Myriad Pro";
+		src: url("../fonts/MyriadProRegular/MyriadProRegular.eot");
+		src: url("../fonts/MyriadProRegular/MyriadProRegular.eot?#iefix") format("embedded-opentype"),
+		url("../fonts/MyriadProRegular/MyriadProRegular.woff") format("woff"),
+		url("../fonts/MyriadProRegular/MyriadProRegular.ttf") format("truetype");
+		font-style: normal;
+		font-weight: normal;
+}
+
+%pd-cont{
+	padding-top: 55px;
+	padding-bottom: 60px;
+}
+//NAVBAR
+.navbar{
+	padding: 20px 0;
+	margin-bottom: 0;
+	background-color: #222120;
+	background-color: rgba(34, 33, 32, 0.7);
+	box-shadow: 0 1px 0 rgba(34, 47, 61, 0.75);
+	border: none;
+	border-radius: 0;
+	.logo{
+		margin: 0;
+	}
+	.navbar-brand{
+		height: auto;
+	}
+
+	a{
+		color: #fff !important;
+		padding: 5px 20px !important;
+	}
+	li.active{
+		a{
+			background-color: $main-color !important;
+		}
+	}
+	li:hover{
+		a{
+			background-color: $main-color !important;
+		}
+	}
+}
+*{
+	transition: .4s all ease-in-out;
+}
+//HEADER
+.header{
+	min-height: 722px;
+	background: url('../img/bg_header.png') 70% center no-repeat;
+	background-size: cover;
+	&__container{
+		text-align: center;
+		position: relative;
+	}
+	&__main-header{
+		margin: 140px 0 0;
+		color: #323232;
+		font-family: Playball;
+		font-size: 80px;
+		font-weight: 400;
+	}
+	&__sup-header{
+		margin: 0 0 45px;
+		color: #323232;
+		font-family: "Myriad Pro";
+		font-size: 20px;
+		font-weight: 400;
+	}
+	&__btn{
+		color: $main-color;
+		padding: 10px 35px;
+	}
+}
+//BTN
+.btn{
+	display: inline-block;
+	text-transform: uppercase;
+	text-decoration: none;
+	padding: 10px 30px;
+	background-color: #ffc20e;
+	transition: .4s all ease-in-out;
+	border-radius: 3px;
+	font-family: "Myriad Pro";
+	&:hover{
+		color: #fff;
+		text-decoration: none;
+		background-color: $main-color;
+	}
+}
+
+//link
+.link{
+	display: inline-block;
+	text-decoration: none;
+}
+//
+.heading{
+	color: #323232;
+	margin-top: 0;
+	margin-bottom: 30px;
+	text-transform: uppercase;
+	font-family: "Myriad Pro";
+	font-size: 36px;
+	text-align: center;
+}
+.sup-heading{
+	margin: 0 auto 50px;
+	max-width: 785px;
+	text-align: center;
+}
+
+
+//about-us
+.about-us{
+	@extend %pd-cont;
+	&__header-content{
+		margin-top: 0;
+		color: #323232;
+		font-family: "Myriad Pro";
+		font-size: 24px;
+		font-weight: 400;
+		text-transform: uppercase;
+	}
+}
